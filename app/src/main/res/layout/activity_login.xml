@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_16x"
+        android:layout_weight="1"
+        android:padding="@dimen/dimen_48x"
+        android:paddingLeft="@dimen/dimen_64x"
+        android:paddingRight="@dimen/dimen_64x"
+        android:paddingTop="@dimen/dimen_16x"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_trophy" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:paddingLeft="@dimen/dimen_32x"
+        android:paddingRight="@dimen/dimen_32x"
+        android:paddingTop="@dimen/dimen_16x">
+
+        <EditText
+            android:id="@+id/emailEditTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:paddingLeft="@dimen/dimen_32x"
+        android:paddingRight="@dimen/dimen_32x"
+        android:paddingTop="@dimen/dimen_16x"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/Light_grey">
+
+        <EditText
+            android:id="@+id/passwordEditTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:password="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_32x"
+        android:paddingRight="@dimen/dimen_32x"
+        android:paddingTop="@dimen/dimen_32x"
+        android:text="@string/forgot_password"
+        android:textColor="@color/dark_grey"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/Login_button"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_32x"
+        android:layout_marginRight="@dimen/dimen_32x"
+        android:layout_marginTop="@dimen/dimen_16x"
+        android:gravity="center"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:textColorLink="@color/colorPrimary" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dimen_16x"
+        android:background="@color/Light_grey" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/not_a_member_signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/not_a_member_signup"
+        android:textColor="@color/Light_grey" />
+
+</LinearLayout>
